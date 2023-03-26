@@ -6,7 +6,7 @@ class Item:
         self.name = name
         self.price = price
         self.count = count
-        self.all += (self, name, price, count)
+        self.all.append(self)
 
     def returned(self):
         desc = str(self.name) + " " + self.price + self.count
