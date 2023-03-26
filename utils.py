@@ -13,7 +13,7 @@ class Item:
         return desc.title()
 
     def calculate_total_price(self):
-        self.total_price = self.price * self.count * self.pay_rate
+        self.total_price = self.price * self.count
         return self.total_price
     def apply_discount(self):
         self.price = self.price * self.pay_rate
